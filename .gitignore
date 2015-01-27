@@ -1,0 +1,15 @@
+# Compiled classes #
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+# IDEA Files #
+*.iml
+.idea
+out
+build
+target
+
+dependency-reduced-pom.xml
