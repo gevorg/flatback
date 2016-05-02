@@ -3,9 +3,18 @@ Flatback
 
 Crossword puzzle solver for site [www.scanword.ru](http://www.scanword.ru), based on helper site [loopy.ru](http://loopy.ru).
 
-## Build using [Apache Maven](http://maven.apache.org/) in project directory
+## Installation
+
+Via git (or downloaded tarball):
 
 ```bash
+$ git clone git@github.com:gevorg/Flatback.git
+```
+
+## Build using [Apache Maven](http://maven.apache.org/) and run
+
+```bash
+$ cd Flatback
 $ mvn package
 $ java -jar target/Flatback-1.0.0.jar
 

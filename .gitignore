@@ -13,3 +13,6 @@ build
 target
 
 dependency-reduced-pom.xml
+
+# Jekyll
+_site
