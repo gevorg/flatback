@@ -1,7 +1,7 @@
 Flatback
 ======
 
-Crossword puzzle solver for site [www.scanword.ru](http://www.scanword.ru), based on helper site [loopy.ru](http://loopy.ru).
+Crossword solver for site [www.scanword.ru](http://www.scanword.ru), based on helper site [loopy.ru](http://loopy.ru).
 
 ## Installation
 
