@@ -31,6 +31,7 @@ Please enter scanword.ru password: [your password]
 
  - **[Java](http://www.java.com/)** - Java is a general-purpose, concurrent, class-based, object-oriented computer programming language that is specifically designed to have as few implementation dependencies as possible.
  - **[Apache Maven](http://maven.apache.org/)** - Apache Maven is a software project management and comprehension tool.
+ - **[Firefox](https://www.mozilla.org/firefox)** - Firefox Web browser.
 
 ## License
 
