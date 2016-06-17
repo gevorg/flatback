@@ -1,5 +1,5 @@
-Flatback
-======
+flatback
+========
 
 Crossword solver for site [www.scanword.ru](http://www.scanword.ru), based on helper site [loopy.ru](http://loopy.ru).
 
@@ -14,9 +14,9 @@ $ git clone git@github.com:gevorg/Flatback.git
 ## Build using [Apache Maven](http://maven.apache.org/) and run
 
 ```bash
-$ cd Flatback
+$ cd flatback
 $ mvn package
-$ java -jar target/Flatback-1.0.0.jar
+$ java -jar target/flatback-1.0.0.jar
 
 Please enter scanword.ru username: [your username]
 Please enter scanword.ru password: [your password]
@@ -25,7 +25,7 @@ Please enter scanword.ru password: [your password]
 
 ## Success looks like this
 
-![Success](https://raw.github.com/gevorg/Flatback/master/success.png)
+![Success](https://raw.github.com/gevorg/flatback/master/success.png)
 
 ## Requirements
 
