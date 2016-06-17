@@ -43,7 +43,7 @@ public class Flatback {
     /**
      * Tries to solve the crossword.
      */
-    public void tryToSolve() {
+    private void tryToSolve() {
         Stack<Question> questionsToSolve = new Stack<>();
         questionsToSolve.addAll(questions); // Add questions to stack.
 
