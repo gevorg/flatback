@@ -25,7 +25,7 @@ $ gradle run -Dusername=[your username] -Dpassword=[your password]
 
  - **[Groovy](http://groovy-lang.org/)** - A multi-faceted language for the Java platform.
  - **[Gradle](https://gradle.org/)** - Gradle Build Tool.
- - **[Chrome](https://www.google.com/chrome/)** - Google Chrome is a freeware web browser developed by Google..
+ - **[Chrome](https://www.google.com/chrome/)** - Google Chrome is a freeware web browser developed by Google.
 
 ## License
 
