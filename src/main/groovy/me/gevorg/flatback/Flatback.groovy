@@ -85,8 +85,8 @@ class Flatback {
         boolean isDone = false
 
         Browser.drive scanword,  {
-            at ScanwordContest
-            isDone = tryAnswer(hints, question)
+            ScanwordContest contest = at ScanwordContest
+            isDone = contest.tryAnswer(hints, question)
         }
 
         return isDone
@@ -102,8 +102,8 @@ class Flatback {
         List<String> result = []
 
         Browser.drive loopy, {
-            to new Loopy(pattern: question.pattern, definition: question.title)
-            result = getHints()
+            Loopy loopyPage = to new Loopy(pattern: question.pattern, definition: question.title)
+            result = loopyPage.getHints()
         }
 
         return result
@@ -118,12 +118,12 @@ class Flatback {
      */
     void login(String user, String pass) {
         Browser.drive scanword, {
-            to ScanwordHome
+            ScanwordHome home = to ScanwordHome
 
-            username = user
-            password = pass
+            home.username = user
+            home.password = pass
 
-            loginBtn.click()
+            home.loginBtn.click()
         }
     }
 
@@ -135,8 +135,8 @@ class Flatback {
     Stack<Question> extractQuestions() {
         Stack<Question> questions = []
         Browser.drive scanword, {
-            to ScanwordContest
-            questions = loadQuestionsAndAnswers()
+            ScanwordContest contest = to ScanwordContest
+            questions = contest.loadQuestionsAndAnswers()
         }
 
         return questions
