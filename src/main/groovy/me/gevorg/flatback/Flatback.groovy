@@ -1,7 +1,6 @@
 package me.gevorg.flatback
 
 import geb.Browser
-import geb.ConfigurationLoader
 import groovy.util.logging.Slf4j
 import io.github.bonigarcia.wdm.ChromeDriverManager
 import me.gevorg.flatback.model.Question
@@ -29,7 +28,7 @@ class Flatback {
         ChromeDriverManager.instance.setup()
 
         // Init browsers.
-        scanword = new Browser(new ConfigurationLoader("scanword").conf)
+        scanword = new Browser()
         loopy = new Browser(driver: new ChromeDriver())
     }
 
