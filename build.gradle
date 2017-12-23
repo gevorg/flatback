@@ -1,0 +1,29 @@
+group 'me.gevorg.flatback'
+version '2.0.0'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "me.gevorg.flatback.Flatback"
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.13'
+
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.8.1'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.8.1'
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '2.0.1'
+    compile group: 'org.gebish', name: 'geb-core', version: '2.0'
+
+    runtime group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+}
+
+run {
+    systemProperty 'username', System.getProperty("username")
+    systemProperty 'password', System.getProperty("password")
+}

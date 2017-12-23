@@ -1,18 +1,6 @@
-# Compiled classes #
-*.class
-
-# Package Files #
-*.war
-*.ear
-
-# IDEA Files #
 *.iml
-.idea
-out
+*.ipr
 build
-target
-
-dependency-reduced-pom.xml
-
-# Jekyll
-_site
+out
+.idea
+.gradle

@@ -11,16 +11,10 @@ Via git (or downloaded tarball):
 $ git clone git@github.com:gevorg/Flatback.git
 ```
 
-## Build using [Apache Maven](http://maven.apache.org/) and run
+## Run using [Gradle](https://gradle.org/)
 
 ```bash
-$ cd flatback
-$ mvn package
-$ java -jar target/flatback-1.0.0.jar
-
-Please enter scanword.ru username: [your username]
-Please enter scanword.ru password: [your password]
-...
+$ gradle run -Dusername=[your username] -Dpassword=[your password]
 ```
 
 ## Success looks like this
@@ -29,9 +23,9 @@ Please enter scanword.ru password: [your password]
 
 ## Requirements
 
- - **[Java](http://www.java.com/)** - Java is a general-purpose, concurrent, class-based, object-oriented computer programming language that is specifically designed to have as few implementation dependencies as possible.
- - **[Apache Maven](http://maven.apache.org/)** - Apache Maven is a software project management and comprehension tool.
- - **[Firefox](https://www.mozilla.org/firefox)** - Firefox Web browser.
+ - **[Groovy](http://groovy-lang.org/)** - A multi-faceted language for the Java platform.
+ - **[Gradle](https://gradle.org/)** - Gradle Build Tool.
+ - **[Chrome](https://www.google.com/chrome/)** - Google Chrome is a freeware web browser developed by Google..
 
 ## License
 
