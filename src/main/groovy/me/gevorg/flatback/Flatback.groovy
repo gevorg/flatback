@@ -2,12 +2,12 @@ package me.gevorg.flatback
 
 import geb.Browser
 import groovy.util.logging.Slf4j
-import io.github.bonigarcia.wdm.ChromeDriverManager
+import io.github.bonigarcia.wdm.WebDriverManager
 import me.gevorg.flatback.model.Question
 import me.gevorg.flatback.page.Loopy
 import me.gevorg.flatback.page.ScanwordContest
 import me.gevorg.flatback.page.ScanwordHome
-import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 /**
@@ -25,7 +25,7 @@ class Flatback {
 
     Flatback() {
         // Download drivers.
-        ChromeDriverManager.instance.setup()
+        WebDriverManager.chromedriver().setup()
 
         // Init browsers.
         scanword = new Browser()

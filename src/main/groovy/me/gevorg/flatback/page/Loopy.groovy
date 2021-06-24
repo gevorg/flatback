@@ -27,7 +27,7 @@ class Loopy extends Page {
     List<String> getHints() {
         List<String> result = []
 
-        $("div.wd > h3 > a").each {
+        $("div.sr-item__name>a").each {
             result << it.text()
         }
 
